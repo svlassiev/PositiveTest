@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
         if (args.length != 2) {
             System.out.println("Program returns a name of a folder with compilation subset for a certain file");
-            System.out.println("Usage: java com.positive.Main file project");
+            System.out.println("Usage: java -jar PositiveTest.jar file project");
         } else {
             File unit = new File(args[0]);
             Path project = new File(args[1]).toPath();
