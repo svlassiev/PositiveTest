@@ -46,7 +46,7 @@ public class CompilationSubsetDetector {
      * Inspects project folder in attempt to find compilation subset for compilationFile.
      * All the files are copied with their package structure to temp folder, which is returned by this method.
      * @param compilationFile java file which dependencies are analyzed
-     * @return temporaty root directory where compilation subset is stored
+     * @return temporary root directory where compilation subset is stored
      * @throws IOException in case of problems with writing on disk
      * @throws ParseException if compilationFile cannot be parsed
      */
@@ -77,8 +77,7 @@ public class CompilationSubsetDetector {
             } else {
                 searchDirectory = packageName.replace(".", File.separator);
             }
-            String className = new StringBuilder(searchDirectory).append(File.separator).append(type.getName()).
-                    append(".java").toString();
+            String className = searchDirectory + File.separator + type.getName() + ".java";
             getFileCopyFromProject(className, false);
         }
 
