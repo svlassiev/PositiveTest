@@ -1,9 +1,7 @@
 <component name="libraryTable">
   <library name="com.google.code.javaparser:javaparser:1.0.11" type="repository">
     <properties maven-id="com.google.code.javaparser:javaparser:1.0.11" />
-    <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/google/code/javaparser/javaparser/1.0.11/javaparser-1.0.11.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
